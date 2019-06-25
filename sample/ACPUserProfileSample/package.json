@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@adobe/react-native-acpcore": "^1.0.5",
     "react": "16.8.3",
     "react-native": "0.59.8"
   },
