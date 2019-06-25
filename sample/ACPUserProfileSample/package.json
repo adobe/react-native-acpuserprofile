@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@adobe/react-native-acpcore": "^1.0.5",
-    "@adobe/react-native-acpuserprofile": "1.0.0-alpha",
+    "@adobe/react-native-acpuserprofile": "1.0.1-alpha",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
     "react": "16.8.3",
     "react-native": "0.59.8"
   },
