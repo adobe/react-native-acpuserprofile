@@ -53,8 +53,7 @@ public class RCTACPUserProfileModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void updateUserAttributes(ReadableMap attributeMap) {
-    Map<String, Object> attributeMapObj = RCTACPUserProfileMapUtil.toMap(attributeMap);
-    UserProfile.updateUserAttributes(attributeMapObj);
+    UserProfile.updateUserAttributes(RCTACPUserProfileMapUtil.toMap(attributeMap));
   }
 
   @ReactMethod
