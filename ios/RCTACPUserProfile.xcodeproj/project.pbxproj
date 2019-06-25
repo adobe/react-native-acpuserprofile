@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		217962A022A82B2F00A4B13F /* libACPUserProfile_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2179629F22A82B2F00A4B13F /* libACPUserProfile_iOS.a */; };
 		217962A122A82B6500A4B13F /* ACPUserProfile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2179629E22A82B2900A4B13F /* ACPUserProfile.h */; };
-		42D6498E928CC0D1E890766F /* libPods-RCTACPUserProfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AF4E3D40F70DDA12E0AE77 /* libPods-RCTACPUserProfile.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RCTACPUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RCTACPUserProfile.m */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +31,6 @@
 		2179629F22A82B2F00A4B13F /* libACPUserProfile_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libACPUserProfile_iOS.a; path = libs/libACPUserProfile_iOS.a; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RCTACPUserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTACPUserProfile.h; path = src/RCTACPUserProfile.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RCTACPUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTACPUserProfile.m; path = src/RCTACPUserProfile.m; sourceTree = "<group>"; };
-		C2CD35E7694A9DDE0FC3F080 /* Pods-RCTACPUserProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTACPUserProfile.release.xcconfig"; path = "Target Support Files/Pods-RCTACPUserProfile/Pods-RCTACPUserProfile.release.xcconfig"; sourceTree = "<group>"; };
-		D9A9A13E5BE71F23EFABE3BB /* Pods-RCTACPUserProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTACPUserProfile.debug.xcconfig"; path = "Target Support Files/Pods-RCTACPUserProfile/Pods-RCTACPUserProfile.debug.xcconfig"; sourceTree = "<group>"; };
-		E2AF4E3D40F70DDA12E0AE77 /* libPods-RCTACPUserProfile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCTACPUserProfile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,21 +39,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				217962A022A82B2F00A4B13F /* libACPUserProfile_iOS.a in Frameworks */,
-				42D6498E928CC0D1E890766F /* libPods-RCTACPUserProfile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EE2B9F76D7B85C2E31D65CE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E2AF4E3D40F70DDA12E0AE77 /* libPods-RCTACPUserProfile.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +73,6 @@
 		5786267EF96031D6F16AD060 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D9A9A13E5BE71F23EFABE3BB /* Pods-RCTACPUserProfile.debug.xcconfig */,
-				C2CD35E7694A9DDE0FC3F080 /* Pods-RCTACPUserProfile.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -100,7 +85,6 @@
 				2179629C22A82B1700A4B13F /* libs */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				5786267EF96031D6F16AD060 /* Pods */,
-				0EE2B9F76D7B85C2E31D65CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +95,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RCTACPUserProfile" */;
 			buildPhases = (
-				7A221C3D3ABEDDE7B1089034 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -156,31 +139,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7A221C3D3ABEDDE7B1089034 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RCTACPUserProfile-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -277,7 +235,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9A9A13E5BE71F23EFABE3BB /* Pods-RCTACPUserProfile.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,7 +254,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2CD35E7694A9DDE0FC3F080 /* Pods-RCTACPUserProfile.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

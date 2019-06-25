@@ -16,6 +16,7 @@ governing permissions and limitations under the License.
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Button, ScrollView, NativeModules} from 'react-native';
 import {ACPCore, ACPLifecycle, ACPSignal, ACPIdentity, ACPMobileLogLevel, ACPMobilePrivacyStatus} from '@adobe/react-native-acpcore';
+import {ACPUserProfile} from '@adobe/react-native-acpuserprofile';
 
 
 type Props = {};
@@ -27,6 +28,10 @@ export default class App extends Component<Props> {
         <ScrollView contentContainerStyle={{ marginTop: 75 }}>
         <Text style={styles.welcome}>ACPCore Test App</Text>
         <Button title="ACPCore::extensionVersion()" onPress={() => this.coreExtensionVersion()}/>
+        <Button title="ACPUserProfile::extensionVersion()" onPress={() => this.profileExtensionVersion()}/>
+        <Button title="ACPUserProfile::updateUserAttributes(...)" onPress={() => this.updateUserAttributes()}/>
+        <Button title="ACPUserProfile::updateUserAttribute(...)" onPress={() => this.updateUserAttribute()}/>
+        <Button title="ACPUserProfile::removeUserAttribute(...)" onPress={() => this.removeUserAttribute()}/>
         </ScrollView>
       </View>
     );
@@ -38,11 +43,32 @@ export default class App extends Component<Props> {
     ACPLifecycle.registerExtension();
     ACPIdentity.registerExtension();
     ACPSignal.registerExtension();
+    ACPUserProfile.registerExtension();
     ACPCore.start();
   }
 
   coreExtensionVersion() {
     ACPCore.extensionVersion().then(version => console.log("AdobeExperienceSDK: ACPCore version: " + version));
+  }
+
+  profileExtensionVersion() {
+    ACPUserProfile.extensionVersion().then(version => console.log("AdobeExperienceSDK: ACPUserProfile version: " + version));
+  }
+
+  updateUserAttributes() {
+    let attrMap = {"mapKey": "mapValue", "mapKey1": "mapValue1"};
+    ACPUserProfile.updateUserAttributes(attrMap);
+  }
+
+  updateUserAttribute() {
+    let attributeName = "attrNameTest";
+    let attributeValue = "attrValueTest";
+    ACPUserProfile.updateUserAttribute(attributeName, attributeValue);
+  }
+
+  removeUserAttribute() {
+    let attributeName = "attrNameTest";
+    ACPUserProfile.removeUserAttribute(attributeName);
   }
 
 }

@@ -43,6 +43,7 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ACPUserProfileSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ACPUserProfileSampleTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		7620F161CD52424C99A4BB29 /* libRCTACPUserProfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A010FC885D43B19B32E982 /* libRCTACPUserProfile.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		D1E4F6D075514A5EB0C496ED /* libRCTACPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B01CCFD1CC634305A0B4C7A6 /* libRCTACPCore.a */; };
@@ -148,6 +149,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTACPCore;
+		};
+		216995A822C27C4F0071D79A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE90EEE03D154C00B092F786 /* RCTACPUserProfile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTACPUserProfile;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -360,6 +368,7 @@
 		2169956C22C278A50071D79A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		2169956E22C278A90071D79A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2169957022C278AD0071D79A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		23A010FC885D43B19B32E982 /* libRCTACPUserProfile.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTACPUserProfile.a; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ACPUserProfileSample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACPUserProfileSample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ACPUserProfileSample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ACPUserProfileSample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +376,7 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		AE90EEE03D154C00B092F786 /* RCTACPUserProfile.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTACPUserProfile.xcodeproj; path = "../node_modules/@adobe/react-native-acpuserprofile/ios/RCTACPUserProfile.xcodeproj"; sourceTree = "<group>"; };
 		B01CCFD1CC634305A0B4C7A6 /* libRCTACPCore.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTACPCore.a; sourceTree = "<group>"; };
 		D1B03C9E28EA45EBAEEC6AFF /* RCTACPCore.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTACPCore.xcodeproj; path = "../node_modules/@adobe/react-native-acpcore/ios/RCTACPCore.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -407,6 +417,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				D1E4F6D075514A5EB0C496ED /* libRCTACPCore.a in Frameworks */,
+				7620F161CD52424C99A4BB29 /* libRCTACPUserProfile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +568,7 @@
 			isa = PBXGroup;
 			children = (
 				B01CCFD1CC634305A0B4C7A6 /* libRCTACPCore.a */,
+				23A010FC885D43B19B32E982 /* libRCTACPUserProfile.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -565,6 +577,14 @@
 			isa = PBXGroup;
 			children = (
 				2169956322C278830071D79A /* libRCTACPCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		216995A522C27C4F0071D79A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				216995A922C27C4F0071D79A /* libRCTACPUserProfile.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -620,6 +640,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				D1B03C9E28EA45EBAEEC6AFF /* RCTACPCore.xcodeproj */,
+				AE90EEE03D154C00B092F786 /* RCTACPUserProfile.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -785,6 +806,10 @@
 					ProjectRef = D1B03C9E28EA45EBAEEC6AFF /* RCTACPCore.xcodeproj */;
 				},
 				{
+					ProductGroup = 216995A522C27C4F0071D79A /* Products */;
+					ProjectRef = AE90EEE03D154C00B092F786 /* RCTACPUserProfile.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
@@ -933,6 +958,13 @@
 			fileType = archive.ar;
 			path = libRCTACPCore.a;
 			remoteRef = 2169956222C278830071D79A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		216995A922C27C4F0071D79A /* libRCTACPUserProfile.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTACPUserProfile.a;
+			remoteRef = 216995A822C27C4F0071D79A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */ = {
@@ -1251,12 +1283,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpuserprofile/ios/src/**",
 				);
 				INFOPLIST_FILE = ACPUserProfileSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1277,12 +1311,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpuserprofile/ios/src/**",
 				);
 				INFOPLIST_FILE = ACPUserProfileSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1304,6 +1340,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpuserprofile/ios/src/**",
 				);
 				INFOPLIST_FILE = ACPUserProfileSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1326,6 +1363,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpuserprofile/ios/src/**",
 				);
 				INFOPLIST_FILE = ACPUserProfileSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1355,11 +1393,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpuserprofile/ios/src/**",
 				);
 				INFOPLIST_FILE = "ACPUserProfileSample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1389,11 +1429,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpuserprofile/ios/src/**",
 				);
 				INFOPLIST_FILE = "ACPUserProfileSample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1422,11 +1464,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpuserprofile/ios/src/**",
 				);
 				INFOPLIST_FILE = "ACPUserProfileSample-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1455,11 +1499,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpuserprofile/ios/src/**",
 				);
 				INFOPLIST_FILE = "ACPUserProfileSample-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
