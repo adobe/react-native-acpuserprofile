@@ -70,13 +70,6 @@
 			name = include;
 			sourceTree = "<group>";
 		};
-		5786267EF96031D6F16AD060 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +77,6 @@
 				B3E7B5891CC2AC0600A0062D /* RCTACPUserProfile.m */,
 				2179629C22A82B1700A4B13F /* libs */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				5786267EF96031D6F16AD060 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};

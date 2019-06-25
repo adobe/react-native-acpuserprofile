@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@adobe/react-native-acpcore": "^1.0.5",
-    "@adobe/react-native-acpuserprofile": "git+ssh://git@git.corp.adobe.com:dms-mobile/bourbon-platform-react-native-userprofile.git",
+    "@adobe/react-native-acpuserprofile": "1.0.0-alpha",
     "react": "16.8.3",
     "react-native": "0.59.8"
   },
