@@ -13,28 +13,38 @@ governing permissions and limitations under the License.
 @format
 */
 
-
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Button, ScrollView, NativeModules} from 'react-native';
+import {ACPCore, ACPLifecycle, ACPSignal, ACPIdentity, ACPMobileLogLevel, ACPMobilePrivacyStatus} from '@adobe/react-native-acpcore';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    this.initSDK();
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <ScrollView contentContainerStyle={{ marginTop: 75 }}>
+        <Text style={styles.welcome}>ACPCore Test App</Text>
+        <Button title="ACPCore::extensionVersion()" onPress={() => this.coreExtensionVersion()}/>
+        </ScrollView>
       </View>
     );
   }
+
+  initSDK() {
+    ACPCore.setLogLevel(ACPMobileLogLevel.VERBOSE);
+    ACPCore.configureWithAppId("launch-EN1a68f9bc5b3c475b8c232adc3f8011fb");
+    ACPLifecycle.registerExtension();
+    ACPIdentity.registerExtension();
+    ACPSignal.registerExtension();
+    ACPCore.start();
+  }
+
+  coreExtensionVersion() {
+    ACPCore.extensionVersion().then(version => console.log("AdobeExperienceSDK: ACPCore version: " + version));
+  }
+
 }
 
 const styles = StyleSheet.create({
@@ -45,13 +55,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 22,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  }
 });
