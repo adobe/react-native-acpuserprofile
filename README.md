@@ -3,7 +3,7 @@
 
 [![npm version](https://badge.fury.io/js/%40adobe%2Freact-native-acpuserprofile.svg)](https://badge.fury.io/js/%40adobe%2Freact-native-acpuserprofile) [![CircleCI](https://img.shields.io/circleci/project/github/adobe/react-native-acpuserprofile/master.svg?logo=circleci)](https://circleci.com/gh/adobe/workflows/react-native-acpuserprofile) ![NPM](https://img.shields.io/npm/l/@adobe/react-native-acpuserprofile.svg)
 
-`@adobe/react-native-acpuserprofile` is a wrapper around the iOS and Android [AEP UserProfile Manager SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/profile) to allow for integration with React Native applications. Functionality to enable Adobe User Profile is provided entirely through JavaScript documented below.
+`@adobe/react-native-acpuserprofile` is a wrapper around the iOS and Android [AEP User Profile Manager SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/profile) to allow for integration with React Native applications. Functionality to enable Adobe User Profile is provided entirely through JavaScript documented below.
 
 
 ## Installation
