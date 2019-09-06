@@ -9,13 +9,9 @@
  governing permissions and limitations under the License.
  */
 
-#if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
-#else
-#import <React/RCTBridgeModule.h>
-#endif
+ #import <React/RCTBridgeModule.h>
+ #import <Foundation/Foundation.h>
 
 @interface RCTACPUserProfile : NSObject <RCTBridgeModule>
 
 @end
-  
