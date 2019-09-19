@@ -71,20 +71,20 @@ ACPUserProfile.extensionVersion().then(version => console.log("AdobeExperienceSD
 ACPUserProfile.registerExtension();
 ```
 
-##### Update user attributes
+##### Update user attributes:
 ```javascript
 let attrMap = {"mapKey": "mapValue", "mapKey1": "mapValue1"};
 ACPUserProfile.updateUserAttributes(attrMap);
 ```
 
-##### Updating a user attribute
+##### Updating a user attribute:
 ```javascript
 let attributeName = "attrNameTest";
 let attributeValue = "attrValueTest";
 ACPUserProfile.updateUserAttribute(attributeName, attributeValue);
 ```
 
-##### Remove a user attribute
+##### Remove a user attribute:
 ```javascript
 let attributeName = "attrNameTest";
 ACPUserProfile.removeUserAttribute(attributeName);
