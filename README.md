@@ -40,13 +40,13 @@ npm install @adobe/react-native-acpuserprofile
 
 
 ```bash
-$ react-native link @adobe/react-native-acpuserprofile
+react-native link @adobe/react-native-acpuserprofile
 ```
 
 *Note* For `iOS` using `cocoapods`, run:
 
 ```bash
-$ cd ios/ && pod install
+cd ios/ && pod install
 ```
 
 
