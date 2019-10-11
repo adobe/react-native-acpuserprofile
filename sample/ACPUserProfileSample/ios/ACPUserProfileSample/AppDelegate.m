@@ -15,6 +15,11 @@ governing permissions and limitations under the License.
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <RCTACPCore/ACPCore.h>
+#import <RCTACPCore/ACPLifecycle.h>
+#import <RCTACPCore/ACPIdentity.h>
+#import <RCTACPCore/ACPSignal.h>
+#import <RCTACPUserProfile/ACPUserProfile.h>
 
 @implementation AppDelegate
 
@@ -32,6 +37,17 @@ governing permissions and limitations under the License.
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+
+  [ACPCore setLogLevel:ACPMobileLogLevelVerbose];
+  [ACPCore configureWithAppId:@"yourAppId"];
+  [ACPCore setWrapperType:ACPMobileWrapperTypeReactNative];
+  [ACPIdentity registerExtension];
+  [ACPLifecycle registerExtension];
+  [ACPSignal registerExtension];
+  [ACPUserProfile registerExtension];
+
+  [ACPCore start:nil];
+
   return YES;
 }
 

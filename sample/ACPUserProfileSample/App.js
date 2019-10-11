@@ -15,14 +15,13 @@ governing permissions and limitations under the License.
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Button, ScrollView, NativeModules} from 'react-native';
-import {ACPCore, ACPLifecycle, ACPSignal, ACPIdentity, ACPMobileLogLevel, ACPMobilePrivacyStatus} from '@adobe/react-native-acpcore';
+import {ACPCore} from '@adobe/react-native-acpcore';
 import {ACPUserProfile} from '@adobe/react-native-acpuserprofile';
 
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
-    this.initSDK();
     return (
       <View style={styles.container}>
         <ScrollView contentContainerStyle={{ marginTop: 75 }}>
@@ -35,16 +34,6 @@ export default class App extends Component<Props> {
         </ScrollView>
       </View>
     );
-  }
-
-  initSDK() {
-    ACPCore.setLogLevel(ACPMobileLogLevel.VERBOSE);
-    ACPCore.configureWithAppId("yourAppId");
-    ACPLifecycle.registerExtension();
-    ACPIdentity.registerExtension();
-    ACPSignal.registerExtension();
-    ACPUserProfile.registerExtension();
-    ACPCore.start();
   }
 
   coreExtensionVersion() {
