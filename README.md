@@ -83,7 +83,10 @@ import com.adobe.marketing.mobile.UserProfile;
 UserProfile.registerExtension();
 ```
 
+##### **Javascript:**
 ```javascript
+import {ACPUserProfile} from '@adobe/react-native-acpuserprofile';
+
 ACPUserProfile.registerExtension();
 ```
 
