@@ -9,6 +9,7 @@
   "dependencies": {
     "@adobe/react-native-acpcore": "*",
     "@adobe/react-native-acpuserprofile": "*",
+    "graceful-fs": "4.2.2",
     "install": "^0.12.2",
     "npm": "^6.9.0",
     "react": "16.8.3",
