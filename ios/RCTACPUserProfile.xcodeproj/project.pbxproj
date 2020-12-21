@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		217962A022A82B2F00A4B13F /* libACPUserProfile_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2179629F22A82B2F00A4B13F /* libACPUserProfile_iOS.a */; };
-		217962A122A82B6500A4B13F /* ACPUserProfile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2179629E22A82B2900A4B13F /* ACPUserProfile.h */; };
+		21B629E8259043BF0039CE4D /* ACPUserProfile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B629E7259043BF0039CE4D /* ACPUserProfile.xcframework */; };
 		B3E7B58A1CC2AC0600A0062D /* RCTACPUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RCTACPUserProfile.m */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +18,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				217962A122A82B6500A4B13F /* ACPUserProfile.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -27,8 +25,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRCTACPUserProfile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTACPUserProfile.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2179629E22A82B2900A4B13F /* ACPUserProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ACPUserProfile.h; path = libs/include/ACPUserProfile.h; sourceTree = "<group>"; };
-		2179629F22A82B2F00A4B13F /* libACPUserProfile_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libACPUserProfile_iOS.a; path = libs/libACPUserProfile_iOS.a; sourceTree = "<group>"; };
+		21B629E7259043BF0039CE4D /* ACPUserProfile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ACPUserProfile.xcframework; path = libs/ACPUserProfile.xcframework; sourceTree = "<group>"; };
+		21B629EA259043C90039CE4D /* ACPUserProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ACPUserProfile.h; path = "libs/ACPUserProfile.xcframework/ios-arm64_armv7_armv7s/Headers/ACPUserProfile.h"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RCTACPUserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTACPUserProfile.h; path = src/RCTACPUserProfile.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RCTACPUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTACPUserProfile.m; path = src/RCTACPUserProfile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217962A022A82B2F00A4B13F /* libACPUserProfile_iOS.a in Frameworks */,
+				21B629E8259043BF0039CE4D /* ACPUserProfile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +54,10 @@
 		2179629C22A82B1700A4B13F /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				2179629F22A82B2F00A4B13F /* libACPUserProfile_iOS.a */,
-				2179629D22A82B1D00A4B13F /* include */,
+				21B629EA259043C90039CE4D /* ACPUserProfile.h */,
+				21B629E7259043BF0039CE4D /* ACPUserProfile.xcframework */,
 			);
 			name = libs;
-			sourceTree = "<group>";
-		};
-		2179629D22A82B1D00A4B13F /* include */ = {
-			isa = PBXGroup;
-			children = (
-				2179629E22A82B2900A4B13F /* ACPUserProfile.h */,
-			);
-			name = include;
 			sourceTree = "<group>";
 		};
 		58B511D21A9E6C8500147676 = {
@@ -241,6 +231,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RCTACPUserProfile;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 			};
 			name = Debug;
 		};
@@ -260,6 +251,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RCTACPUserProfile;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 			};
 			name = Release;
 		};
