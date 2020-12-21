@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21B629E8259043BF0039CE4D /* ACPUserProfile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B629E7259043BF0039CE4D /* ACPUserProfile.xcframework */; };
+		21B629F8259046500039CE4D /* ACPUserProfile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21B629EA259043C90039CE4D /* ACPUserProfile.h */; };
 		B3E7B58A1CC2AC0600A0062D /* RCTACPUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RCTACPUserProfile.m */; };
 /* End PBXBuildFile section */
 
@@ -18,6 +19,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				21B629F8259046500039CE4D /* ACPUserProfile.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +79,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RCTACPUserProfile" */;
 			buildPhases = (
+				58B511D91A9E6C8500147676 /* CopyFiles */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
-				58B511D91A9E6C8500147676 /* CopyFiles */,
 			);
 			buildRules = (
 			);
