@@ -47,7 +47,7 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
-		22BA767B4539479A988193C6 /* libRCTACPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E31307F63848B1A0251C6A /* libRCTACPCore.a */; };
+		3EF837521FE8479D84F6589B /* libRCTACPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B73C7651EA04469183984AB6 /* libRCTACPCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -371,8 +371,8 @@
 		C55D85AF813E445C97FF90D4 /* RCTACPUserProfile.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTACPUserProfile.xcodeproj; path = "../node_modules/@adobe/react-native-acpuserprofile/ios/RCTACPUserProfile.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		759F7E8DC1D14256B48F4482 /* RCTACPCore.xcodeproj */ = {isa = PBXFileReference; name = "RCTACPCore.xcodeproj"; path = "../node_modules/@adobe/react-native-acpcore/ios/RCTACPCore.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		D4E31307F63848B1A0251C6A /* libRCTACPCore.a */ = {isa = PBXFileReference; name = "libRCTACPCore.a"; path = "libRCTACPCore.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		203DC56A5FAF4D6FA6704EF1 /* RCTACPCore.xcodeproj */ = {isa = PBXFileReference; name = "RCTACPCore.xcodeproj"; path = "../node_modules/@adobe/react-native-acpcore/ios/RCTACPCore.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		B73C7651EA04469183984AB6 /* libRCTACPCore.a */ = {isa = PBXFileReference; name = "libRCTACPCore.a"; path = "libRCTACPCore.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,7 +409,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				610D5C4A31C145209B86E240 /* libRCTACPUserProfile.a in Frameworks */,
-				22BA767B4539479A988193C6 /* libRCTACPCore.a in Frameworks */,
+				3EF837521FE8479D84F6589B /* libRCTACPCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +624,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				C55D85AF813E445C97FF90D4 /* RCTACPUserProfile.xcodeproj */,
-				759F7E8DC1D14256B48F4482 /* RCTACPCore.xcodeproj */,
+				203DC56A5FAF4D6FA6704EF1 /* RCTACPCore.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
