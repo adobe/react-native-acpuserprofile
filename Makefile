@@ -19,6 +19,7 @@ build-sample-android:
 	(cd sample/ACP*SampleApp/android && ./gradlew clean assembleRelease -x bundleReleaseJsAndAssets)
 
 build-sample-ios:
+	(cd sample/ACP*SampleApp/ios && pod update)
 	(cd sample/ACP*SampleApp && npx react-native run-ios)
 
 run-tests:
