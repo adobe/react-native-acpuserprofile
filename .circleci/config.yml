@@ -72,8 +72,9 @@ jobs:
 
       - run:
           name: Building Android Sample App
-          command: make build-sample-android
-
+          command: |
+            export NODE_OPTIONS=--max-old-space-size=8192
+            make build-sample-android
 
   build-sample-app-ios:
     macos:
