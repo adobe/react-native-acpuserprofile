@@ -16,10 +16,10 @@ build-ios: setup
 	(cd ios && xcodebuild build -workspace RCT${PROJECT_NAME}.xcworkspace -scheme RCT${PROJECT_NAME})
 
 build-sample-android:
-	(cd sample/ACP*SampleApp/android && ./gradlew clean assembleRelease)
+	(cd sample/ACP*SampleApp/android && ./gradlew clean assembleRelease -x bundleReleaseJsAndAssets)
 
 build-sample-ios:
-	(cd sample/ACP*SampleApp/ios && npx react-native run-ios)
+	(cd sample/ACP*SampleApp && npx react-native run-ios)
 
 run-tests:
 	jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand
