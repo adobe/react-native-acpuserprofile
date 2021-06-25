@@ -1,7 +1,0 @@
-rootProject.name = 'ACPUserProfileSample'
-include ':@adobe_react-native-acpcore'
-project(':@adobe_react-native-acpcore').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpcore/android')
-include ':@adobe_react-native-acpuserprofile'
-project(':@adobe_react-native-acpuserprofile').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpuserprofile/android')
-
-include ':app'

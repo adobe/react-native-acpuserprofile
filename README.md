@@ -57,24 +57,24 @@ cd ios/ && pod install
 
 ### [User Profile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/profile)
 
-##### Importing the extension:
+#### Importing the extension:
 ```javascript
 import {ACPUserProfile} from '@adobe/react-native-acpuserprofile';
 ```
 
-##### Getting the extension version:
+#### Getting the extension version:
 
 ```javascript
 ACPUserProfile.extensionVersion().then(version => console.log("AdobeExperienceSDK: ACPUserProfile version: " + version));
 ```
 
-##### Registering the extension with ACPCore:
+#### Registering the extension with ACPCore:
 
-> Note: It is recommended to initialize the SDK via native code inside your AppDelegate and MainApplication in iOS and Android respectively. However, you can still initialize the SDK in Javascript. For more information see how to initialize [Core](https://github.com/adobe/react-native-acpcore#initializing-the-sdk). 
+It is recommended to initialize the SDK via native code inside your AppDelegate and MainApplication in iOS and Android respectively. 
 
 ##### **iOS**
 ```objective-c
-#import <RCTACPUserProfile/ACPUserProfile.h>
+#import <ACPUserProfile.h>
 
 [ACPUserProfile registerExtension];
 ```
@@ -86,27 +86,20 @@ import com.adobe.marketing.mobile.UserProfile;
 UserProfile.registerExtension();
 ```
 
-##### **Javascript:**
-```javascript
-import {ACPUserProfile} from '@adobe/react-native-acpuserprofile';
-
-ACPUserProfile.registerExtension();
-```
-
-##### Update user attributes:
+#### Update user attributes:
 ```javascript
 let attrMap = {"mapKey": "mapValue", "mapKey1": "mapValue1"};
 ACPUserProfile.updateUserAttributes(attrMap);
 ```
 
-##### Updating a user attribute:
+#### Updating a user attribute:
 ```javascript
 let attributeName = "attrNameTest";
 let attributeValue = "attrValueTest";
 ACPUserProfile.updateUserAttribute(attributeName, attributeValue);
 ```
 
-##### Remove a user attribute:
+#### Remove a user attribute:
 ```javascript
 let attributeName = "attrNameTest";
 ACPUserProfile.removeUserAttribute(attributeName);

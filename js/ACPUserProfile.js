@@ -27,13 +27,6 @@ module.exports = {
   },
 
   /**
-   * Registers the ACPUserProfile extension with ACPCore
-   */
-  registerExtension() {
-    RCTACPUserProfile.registerExtension();
-  },
-
-  /**
    * UserProfile API to remove the give attribute name
    *
    * If the attribute does not exist, this API has no effects

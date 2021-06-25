@@ -23,12 +23,6 @@ describe('ACPUserProfile', () => {
     expect(spy).toHaveBeenCalled();
   });
 
-  test('registerExtension is called', async () => {
-    const spy = jest.spyOn(NativeModules.ACPUserProfile, 'registerExtension');
-    await ACPUserProfile.registerExtension();
-    expect(spy).toHaveBeenCalled();
-  });
-
   test('removeUserAttribute is called with correct parameter', async () => {
     const spy = jest.spyOn(NativeModules.ACPUserProfile, 'removeUserAttribute');
     let attributeName = "attrNameTest";
