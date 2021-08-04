@@ -25,10 +25,6 @@ RCT_EXPORT_METHOD(extensionVersion: (RCTPromiseResolveBlock) resolve rejecter:(R
     resolve([ACPUserProfile extensionVersion]);
 }
 
-RCT_EXPORT_METHOD(registerExtension) {
-    [ACPUserProfile registerExtension];
-}
-
 RCT_EXPORT_METHOD(removeUserAttribute: (nonnull NSString*) attributeName) {
     [ACPUserProfile removeUserAttribute:attributeName];
 }

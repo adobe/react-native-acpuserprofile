@@ -43,15 +43,6 @@ public class RCTACPUserProfileModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void registerExtension() {
-    try {
-      UserProfile.registerExtension();
-    } catch (InvalidInitException e) {
-      Log.d(getName(), "Registering UserProfile extension failed with error: " + e.getMessage());
-    }
-  }
-
-  @ReactMethod
   public void updateUserAttributes(ReadableMap attributeMap) {
     UserProfile.updateUserAttributes(RCTACPUserProfileMapUtil.toMap(attributeMap));
   }
