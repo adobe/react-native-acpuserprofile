@@ -6,7 +6,7 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/adobe/react-native-acpuserprofile/main.svg?logo=circleci)](https://circleci.com/gh/adobe/workflows/react-native-acpuserprofile) 
 [![license](https://img.shields.io/npm/l/@adobe/react-native-acpuserprofile.svg)](https://github.com/adobe/react-native-acpuserprofile/blob/main/LICENSE)
 
-`@adobe/react-native-acpuserprofile` is a wrapper around the iOS and Android [AEP User Profile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/profile) to allow for integration with React Native applications. Functionality to enable Adobe User Profile is provided entirely through JavaScript documented below.
+`@adobe/react-native-acpuserprofile` is a wrapper around the iOS and Android [AEP User Profile SDK](https://developer.adobe.com/client-sdks/previous-versions/documentation/profile/) to allow for integration with React Native applications. Functionality to enable Adobe User Profile is provided entirely through JavaScript documented below.
 
 
 ## Installation
@@ -55,7 +55,7 @@ cd ios/ && pod install
 
 ## Usage
 
-### [User Profile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/profile)
+### [User Profile](https://developer.adobe.com/client-sdks/previous-versions/documentation/profile/)
 
 #### Importing the extension:
 ```javascript
