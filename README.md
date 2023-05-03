@@ -55,7 +55,7 @@ cd ios/ && pod install
 
 ## Usage
 
-### [User Profile](https://developer.adobe.com/client-sdks/previous-versions/documentation/profile/)
+### User Profile
 
 #### Importing the extension:
 ```javascript
